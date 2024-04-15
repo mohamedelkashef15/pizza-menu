@@ -48,12 +48,33 @@ const pizzaData = [
 
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
+    <>
+      <Header />
+      <Menu />
+      <Footer />
+    </>
+  );
+}
+
+function Header() {
+  return <h1>Fast React Pizza Co.</h1>;
+}
+function Menu() {
+  return (
+    <>
+      <h2>Our Menu</h2>
+      <p>Authentic Italian cuisine. 6 creative dishes to choose from. All from our stone oven, all organic, all delicious.</p>
       <Pizza />
       <Pizza />
       <Pizza />
-    </div>
+    </>
+  );
+}
+function Footer() {
+  return (
+    <>
+      <p>It's {new Date().toLocaleTimeString()} We are currently open</p>
+    </>
   );
 }
 
